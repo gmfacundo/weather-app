@@ -1,0 +1,13 @@
+.forecast {
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.forecast > h2,
+h4 {
+  margin: 1rem 0;
+}
+
+.location {
+  display: flex;
+}
