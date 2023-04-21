@@ -4,14 +4,16 @@ import Forecast from './components/Forecast';
 import './App.css';
 import './components/Temperature.css';
 import './components/Forecast.css';
+import { CELSIUS_UNIT, FARENHEIT_UNIT } from './utils/constants';
 
 function App() {
   const [data, setData] = useState({});
+  const [unit, toggleUnit] = useState(CELSIUS_UNIT);
 
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('/data.json');
+        const response = await fetch('/forecast.json');
         const data = await response.json();
         setData(data);
       } catch (error) {
@@ -28,8 +30,12 @@ function App() {
 
   return (
     <section className='temp--modal'>
-      <Temperature data={data.main} />
-      <Forecast data={data} />
+      <Temperature
+        data={data.current}
+        unit={unit}
+        toggleUnit={toggleUnit}
+      />
+      <Forecast data={data} unit={unit} />
     </section>
   );
 }

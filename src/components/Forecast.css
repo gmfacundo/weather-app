@@ -1,13 +1,68 @@
-.forecast {
-  /* display: flex;
-  flex-direction: column; */
-}
-
 .forecast > h2,
 h4 {
   margin: 1rem 0;
 }
 
+.forecast > ul {
+  background-color: #78787877;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+
+  max-height: 40vh;
+  overflow-y: auto;
+}
+
+.forecast > ul::-webkit-scrollbar {
+  width: 0.4rem;
+  border-radius: 4px;
+  background-color: #e7e7e7;
+  border: 1px solid #cacaca;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.forecast > ul::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #78787877;
+}
+
 .location {
   display: flex;
+}
+
+.weekly--forecast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 1rem;
+  border-bottom: 1px rgb(162, 161, 161) solid;
+}
+
+.weekly--forecast > h5 {
+  min-width: 50%;
+}
+
+.weekly--forecast > * {
+  margin: 0;
+}
+
+.rain--chance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rain--chance > p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.water--drop {
+  font-size: 1.25rem;
+  -webkit-text-stroke: 0.3px #aeaeae;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-fill-color: transparent !important;
 }
