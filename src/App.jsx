@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react';
 import Temperature from './components/Temperature';
 import Forecast from './components/Forecast';
 import './App.css';
-import './components/Temperature.css';
-import './components/Forecast.css';
 import { CELSIUS_UNIT, FARENHEIT_UNIT } from './utils/constants';
 
 function App() {

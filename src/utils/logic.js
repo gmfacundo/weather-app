@@ -14,11 +14,3 @@ export function getDayName(timestamp, locale) {
   const day = date.toLocaleDateString(locale, { weekday: 'long' });
   return day.charAt(0).toUpperCase() + day.slice(1);
 }
-
-export function fillWaterdrop(percentage) {
-  const darkColor = 'rgb(214, 213, 213)';
-  const lightColor = 'rgb(153, 202, 216)';
-  const gradient = `linear-gradient(to right, ${darkColor} 0%, ${darkColor} ${percentage}%, ${lightColor} ${percentage}%, ${lightColor} 100%)`;
-
-  return gradient;
-}

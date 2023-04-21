@@ -1,0 +1,15 @@
+.weekly--forecast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.5rem 0;
+}
+
+.weekly--forecast > h5 {
+  min-width: 50%;
+}
+
+.weekly--forecast > * {
+  margin: 0;
+}

@@ -38,6 +38,7 @@
   transition: color 0.2s ease-out;
 
   margin-top: -0.25rem;
+  user-select: none;
 }
 
 .temp--button:hover {

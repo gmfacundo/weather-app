@@ -1,4 +1,5 @@
 import { CELSIUS_UNIT, FARENHEIT_UNIT } from '../utils/constants';
+import './Temperature.css';
 
 const Temperature = ({ data, unit, toggleUnit }) => {
   return (

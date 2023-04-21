@@ -1,0 +1,21 @@
+.chance-span {
+  display: flex;
+  align-items: center;
+
+  min-width: 3vw;
+}
+
+.chance-span > p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+
+.icon {
+  font-size: 1.25rem;
+  -webkit-text-stroke: 0.3px #aeaeae;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  text-fill-color: transparent !important;
+  user-select: none;
+}
